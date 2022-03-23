@@ -17,10 +17,10 @@ int main(void)
     int sum = 0;
     int y;
     scanf("%d", &x);
-  for(i=0,i<x,i++)
+  for(i=0;i<x;i++)
     {
-        i++;
-        scanf(" %d", y);
+        
+        scanf("%d", &y);
         sum = sum + y;
     } 
 
@@ -28,3 +28,5 @@ int main(void)
 
     return 0;
 }
+
+
