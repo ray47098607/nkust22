@@ -17,12 +17,12 @@ int main(void)
     int sum = 0;
     int y;
     scanf("%d", &x);
-    do
+  for(i=0,i<x,i++)
     {
         i++;
         scanf(" %d", y);
         sum = sum + y;
-    } while (i == x);
+    } 
 
     printf("\n平均%d", sum / x);
 
