@@ -68,7 +68,7 @@ int main(int argc, char const *argv[])
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     struct player mplayer[playercount];
 
-    for (int i = 0; i < playercount - 1; i++)
+    for (int i = 0; i < playercount ; i++)
     {
         mplayer[i].number = i;
         mplayer[i].chips = basechip;
@@ -77,7 +77,7 @@ int main(int argc, char const *argv[])
         scanf("%c",&mplayer[i].name);
         printf("[ctime %s ] \u73a9\u5bb6   %d   \u66b1\u7a31 \u70ba %c \n", ctime(&timer),i,mplayer[i].name);
         */
-        printf("[ctime  %s ]\u73a9\u5bb6 %d \u7c4c\u78bc \u8a2d \u70ba: %d\n", ctime(&timer), mplayer[i].number, mplayer[i].number);
+        printf("[ctime  %s ]\u73a9\u5bb6 %d \u7c4c\u78bc \u8a2d \u70ba: %d\n", ctime(&timer), mplayer[i].number, mplayer[i].chips);
         fprintf(cflog, "[ctime  %s ]\u73a9\u5bb6 %d \u7c4c\u78bc \u8a2d \u70ba %d \n", ctime(&timer), mplayer[i].number, mplayer[i].chips);
     }
 
@@ -95,7 +95,6 @@ int main(int argc, char const *argv[])
             p = 0;
         }
         printf("[ctime %s]\u73a9\u5bb6 %d \u7684\u56de\u5408", ctime(&timer), p);
-        char Card[3];
 
         int card[3];
 
@@ -103,34 +102,63 @@ int main(int argc, char const *argv[])
 
         for (size_t i = 0; i < 3; i++)
         {
-            card[i] = rand() % (13-0+1)+1;
-            if (card[i] == 0)
-            {
-                Card[i] = 'K';
-            }
-            else if (card[i] == 1)
-            {
-                Card[i] = 'A';
-            }
-            else if (card[i] == 11)
-            {
-                Card[i] = 'J';
-            }
-            else if (card[i] == 12)
-            {
-                Card[i] = 'Q';
-            }
-            else
-            {
-                Card[i] = card[i];
-            }
+            card[i] = rand() % (13 );
+
         }
         for (size_t i = 0; i < 2; i++)
         {
-            printf("[ctime  %s ]card is\n---\n|%c|\n---\n ", ctime(&timer), Card[i]);
-            fprintf(cflog, "[ctime  %s ] \u67f1\u724c%d \u70ba%c\n", ctime(&timer), i, Card[i]);
+            if (card[i] == 0)
+            {
+
+                printf("[ctime  %s ]card is\n---\n|K|\n---\n ", ctime(&timer));
+                fprintf(cflog, "[ctime  %s ] \u67f1\u724c%d \u70ba K\n", ctime(&timer), i);
+            }
+            else if (card[i] == 1)
+            {
+
+                printf("[ctime  %s ]card is\n---\n|A|\n---\n ", ctime(&timer));
+                fprintf(cflog, "[ctime  %s ] \u67f1\u724c%d \u70ba A\n", ctime(&timer), i);
+            }
+            else if (card[i] == 11)
+            {
+
+                printf("[ctime  %s ]card is\n---\n|J|\n---\n ", ctime(&timer));
+                fprintf(cflog, "[ctime  %s ] \u67f1\u724c%d \u70ba J\n", ctime(&timer), i);
+            }
+            else if (card[i] == 12)
+            {
+                printf("[ctime  %s ]card is\n---\n|Q|\n---\n ", ctime(&timer));
+                fprintf(cflog, "[ctime  %s ] \u67f1\u724c%d \u70ba Q\n", ctime(&timer), i);
+            }
+            else
+            {
+                printf("[ctime  %s ]card is\n---\n|%d|\n---\n ", ctime(&timer), card[i]);
+                fprintf(cflog, "[ctime  %s ] \u67f1\u724c%d \u70ba%d\n", ctime(&timer), i, card[i]);
+            }
         }
-        fprintf(cflog, "[ctime  %s ] \u67f1\u724c%d \u70ba%d\n", ctime(&timer), 2, Card[2]);
+
+        if (card[2] == 0)
+        {
+
+            fprintf(cflog, "[ctime  %s ] \u67f1\u724c 2 \u70ba K\n", ctime(&timer));
+        }
+        else if (card[2] == 1)
+        {
+
+            fprintf(cflog, "[ctime  %s ] \u67f1\u724c 2 \u70ba A\n", ctime(&timer));
+        }
+        else if (card[2] == 11)
+        {
+            fprintf(cflog, "[ctime  %s ] \u67f1\u724c 2 \u70ba J\n", ctime(&timer));
+        }
+        else if (card[2] == 12)
+        {
+            fprintf(cflog, "[ctime  %s ] \u67f1\u724c 2 \u70ba Q\n", ctime(&timer));
+        }
+        else
+        {
+            fprintf(cflog, "[ctime  %s ] \u67f1\u724c 2 \u70ba %d\n", ctime(&timer), card[2]);
+        }
 
         int choice;
         printf("[ctime %s ]\u73a9\u5bb6 %d\u8acb\u9078\u64c7", ctime(&timer), p);
@@ -142,7 +170,7 @@ int main(int argc, char const *argv[])
         {
             printf("  \u649e\u67f1(h)(*5) or (n)(*2) OR ENDGAME (E)");
         }
-        
+
         printf("\n");
 
         scanf("%d", &choice);
@@ -158,6 +186,8 @@ int main(int argc, char const *argv[])
             mplayer[p].chips = mplayer[p].chips - bet;
             fprintf(cflog, "[ctime %s] \u73a9\u5bb6 %d \u4e0b\u6ce8bet: %d \u5f8c\u5269\u4e0b\u7c4c\u78bcchips:%d \n", ctime(&timer), p, mplayer[p].chips);
         }
+
+        
         switch (choice)
         {
         case 'h':
