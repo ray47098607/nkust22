@@ -127,7 +127,7 @@ int main(int argc, char const *argv[])
         }
         for (size_t i = 0; i < 2; i++)
         {
-            printf("[ctime  %s ]card is\n---\n|%s|\n---\n ", ctime(&timer), Card[i]);
+            printf("[ctime  %s ]card is\n---\n|%c|\n---\n ", ctime(&timer), Card[i]);
             fprintf(cflog, "[ctime  %s ] \u67f1\u724c%d \u70ba%s\n", ctime(&timer), i, Card[i]);
         }
         fprintf(cflog, "[ctime  %s ] \u67f1\u724c%d \u70ba%d\n", ctime(&timer), 2, Card[2]);
