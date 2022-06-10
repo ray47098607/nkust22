@@ -159,7 +159,7 @@ int main(int argc, char const *argv[])
             fprintf(cflog, "[ctime  %s ] \u67f1\u724c 2 \u70ba %d\n", ctime(&timer), card[2]);
         }
 
-        int choice;
+        char choice;
         printf("[ctime %s ]\u73a9\u5bb6 %d\u8acb\u9078\u64c7", ctime(&timer), p);
         if (card[0] == card[1])
         {
