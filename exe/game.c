@@ -68,7 +68,7 @@ int main(int argc, char const *argv[])
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     struct player mplayer[playercount];
 
-    for (int i = 0; i < playercount ; i++)
+    for (int i = 0; i < playercount; i++)
     {
         mplayer[i].number = i;
         mplayer[i].chips = basechip;
@@ -83,7 +83,7 @@ int main(int argc, char const *argv[])
 
     fprintf(cflog, "[ctime  %s ]**************************  \n", ctime(&timer));
     printf("[ctime  %s ]********************** \n", ctime(&timer));
-    unsigned int pool = basechip;
+    int pool = basechip;
 
     bool end = false;
 
@@ -102,8 +102,7 @@ int main(int argc, char const *argv[])
 
         for (size_t i = 0; i < 3; i++)
         {
-            card[i] = rand() % (13 );
-
+            card[i] = rand() % (13);
         }
         for (size_t i = 0; i < 2; i++)
         {
@@ -187,7 +186,6 @@ int main(int argc, char const *argv[])
             fprintf(cflog, "[ctime %s] \u73a9\u5bb6 %d \u4e0b\u6ce8bet: %d \u5f8c\u5269\u4e0b\u7c4c\u78bcchips:%d \n", ctime(&timer), p, mplayer[p].chips);
         }
 
-        
         switch (choice)
         {
         case 'h':
@@ -197,21 +195,21 @@ int main(int argc, char const *argv[])
             {
                 mplayer[p].chips = mplayer[p].chips + bet * 5;
                 pool = pool - bet * 4;
-                fprintf(cflog, "[ctime %s] \u73a9\u5bb6 %d \u7372\u5f97 %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer),p, bet * 5, mplayer[p].chips, pool);
-                printf("[ctime %s] \u73a9\u5bb6 %d \u7372\u5f97 %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer),p, bet * 5, mplayer[p].chips, pool);
+                fprintf(cflog, "[ctime %s] \u73a9\u5bb6 %d \u7372\u5f97 %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer), p, bet * 5, mplayer[p].chips, pool);
+                printf("[ctime %s] \u73a9\u5bb6 %d \u7372\u5f97 %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer), p, bet * 5, mplayer[p].chips, pool);
             }
             else if (card[1] == card[2])
             {
                 mplayer[p].chips = mplayer[p].chips + bet * 5;
                 pool = pool - bet * 4;
-                fprintf(cflog, "[ctime %s] \u73a9\u5bb6 %d \u7372\u5f97 %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer),p, bet * 5, mplayer[p].chips, pool);
-                printf("[ctime %s] \u73a9\u5bb6 %d \u7372\u5f97 %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer),p, bet * 5, mplayer[p].chips, pool);
+                fprintf(cflog, "[ctime %s] \u73a9\u5bb6 %d \u7372\u5f97 %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer), p, bet * 5, mplayer[p].chips, pool);
+                printf("[ctime %s] \u73a9\u5bb6 %d \u7372\u5f97 %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer), p, bet * 5, mplayer[p].chips, pool);
             }
             else
             {
                 pool = pool + bet;
-                fprintf(cflog, "[ctime %s] \u73a9\u5bb6 %d \u5931\u53bb %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer),p, bet, mplayer[p].chips, pool);
-                printf("[ctime %s] \u73a9\u5bb6 %d \u5931\u53bb %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer),p, bet, mplayer[p].chips, pool);
+                fprintf(cflog, "[ctime %s] \u73a9\u5bb6 %d \u5931\u53bb %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer), p, bet, mplayer[p].chips, pool);
+                printf("[ctime %s] \u73a9\u5bb6 %d \u5931\u53bb %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer), p, bet, mplayer[p].chips, pool);
             }
 
             break;
@@ -222,14 +220,14 @@ int main(int argc, char const *argv[])
             {
                 mplayer[p].chips = mplayer[p].chips + bet * 2;
                 pool = pool - bet;
-                fprintf(cflog, "[ctime %s] \u73a9\u5bb6 %d \u7372\u5f97 %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer),p, bet * 2, mplayer[p].chips, pool);
-                printf("[ctime %s] \u73a9\u5bb6 %d \u7372\u5f97 %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer),p, bet * 2, mplayer[p].chips, pool);
+                fprintf(cflog, "[ctime %s] \u73a9\u5bb6 %d \u7372\u5f97 %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer), p, bet * 2, mplayer[p].chips, pool);
+                printf("[ctime %s] \u73a9\u5bb6 %d \u7372\u5f97 %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer), p, bet * 2, mplayer[p].chips, pool);
             }
             else
             {
                 pool = pool + bet;
-                fprintf(cflog, "[ctime %s] \u73a9\u5bb6 %d \u5931\u53bb %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer),p, bet, mplayer[p].chips, pool);
-                printf("[ctime %s] \u73a9\u5bb6 %d \u5931\u53bb %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer),p, bet, mplayer[p].chips, pool);
+                fprintf(cflog, "[ctime %s] \u73a9\u5bb6 %d \u5931\u53bb %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer), p, bet, mplayer[p].chips, pool);
+                printf("[ctime %s] \u73a9\u5bb6 %d \u5931\u53bb %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer), p, bet, mplayer[p].chips, pool);
             }
             break;
 
@@ -241,18 +239,20 @@ int main(int argc, char const *argv[])
 
                 mplayer[p].chips = mplayer[p].chips + bet * 2;
                 pool = pool - bet;
-                fprintf(cflog, "[ctime %s] \u73a9\u5bb6 %d \u7372\u5f97 %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer),p, bet * 2, mplayer[p].chips, pool);
-                printf("[ctime %s] \u73a9\u5bb6 %d \u7372\u5f97 %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer),p, bet * 2, mplayer[p].chips, pool);
+                fprintf(cflog, "[ctime %s] \u73a9\u5bb6 %d \u7372\u5f97 %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer), p, bet * 2, mplayer[p].chips, pool);
+                printf("[ctime %s] \u73a9\u5bb6 %d \u7372\u5f97 %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer), p, bet * 2, mplayer[p].chips, pool);
             }
             else
             {
                 pool = pool + bet;
-                fprintf(cflog, "[ctime %s] \u73a9\u5bb6 %d \u5931\u53bb %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer),p, bet, mplayer[p].chips, pool);
+                fprintf(cflog, "[ctime %s] \u73a9\u5bb6 %d \u5931\u53bb %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer), p, bet, mplayer[p].chips, pool);
             }
 
             break;
         case 'e':
         case 'E':
+        case 8:
+
             end = true;
             break;
         default:
@@ -265,21 +265,21 @@ int main(int argc, char const *argv[])
                     {
                         mplayer[p].chips = mplayer[p].chips + bet * 2;
                         pool = pool - bet;
-                        fprintf(cflog, "[ctime %s] \u73a9\u5bb6 %d \u7372\u5f97 %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer),p, bet * 2, mplayer[p].chips, pool);
-                        printf("[ctime %s] \u73a9\u5bb6 %d \u7372\u5f97 %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer),p, bet * 2, mplayer[p].chips, pool);
+                        fprintf(cflog, "[ctime %s] \u73a9\u5bb6 %d \u7372\u5f97 %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer), p, bet * 2, mplayer[p].chips, pool);
+                        printf("[ctime %s] \u73a9\u5bb6 %d \u7372\u5f97 %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer), p, bet * 2, mplayer[p].chips, pool);
                     }
                     else
                     {
                         pool = pool + bet;
-                        fprintf(cflog, "[ctime %s] \u73a9\u5bb6 %d \u5931\u53bb %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer),p, bet, mplayer[p].chips, pool);
-                        printf("[ctime %s] \u73a9\u5bb6 %d \u5931\u53bb %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer),p, bet, mplayer[p].chips, pool);
+                        fprintf(cflog, "[ctime %s] \u73a9\u5bb6 %d \u5931\u53bb %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer), p, bet, mplayer[p].chips, pool);
+                        printf("[ctime %s] \u73a9\u5bb6 %d \u5931\u53bb %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer), p, bet, mplayer[p].chips, pool);
                     }
                 }
                 else
                 {
                     pool = pool + bet;
-                    fprintf(cflog, "[ctime %s] \u73a9\u5bb6 %d \u5931\u53bb %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer),p, bet, mplayer[p].chips, pool);
-                    printf("[ctime %s] \u73a9\u5bb6 %d \u5931\u53bb %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer),p, bet, mplayer[p].chips, pool);
+                    fprintf(cflog, "[ctime %s] \u73a9\u5bb6 %d \u5931\u53bb %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer), p, bet, mplayer[p].chips, pool);
+                    printf("[ctime %s] \u73a9\u5bb6 %d \u5931\u53bb %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer), p, bet, mplayer[p].chips, pool);
                 }
             }
             else if (card[0] < card[1])
@@ -290,28 +290,28 @@ int main(int argc, char const *argv[])
                     {
                         mplayer[p].chips = mplayer[p].chips + bet * 2;
                         pool = pool - bet;
-                        fprintf(cflog, "[ctime %s] \u73a9\u5bb6 %d \u7372\u5f97 %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer),p, bet * 2, mplayer[p].chips, pool);
-                        printf("[ctime %s] \u73a9\u5bb6 %d \u7372\u5f97 %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer),p, bet * 2, mplayer[p].chips, pool);
+                        fprintf(cflog, "[ctime %s] \u73a9\u5bb6 %d \u7372\u5f97 %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer), p, bet * 2, mplayer[p].chips, pool);
+                        printf("[ctime %s] \u73a9\u5bb6 %d \u7372\u5f97 %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer), p, bet * 2, mplayer[p].chips, pool);
                     }
                     else
                     {
                         pool = pool + bet;
-                        fprintf(cflog, "[ctime %s] \u73a9\u5bb6 %d \u5931\u53bb %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer),p, bet, mplayer[p].chips, pool);
-                        printf("[ctime %s] \u73a9\u5bb6 %d \u5931\u53bb %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer),p, bet, mplayer[p].chips, pool);
+                        fprintf(cflog, "[ctime %s] \u73a9\u5bb6 %d \u5931\u53bb %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer), p, bet, mplayer[p].chips, pool);
+                        printf("[ctime %s] \u73a9\u5bb6 %d \u5931\u53bb %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer), p, bet, mplayer[p].chips, pool);
                     }
                 }
                 else
                 {
                     pool = pool + bet;
-                    fprintf(cflog, "[ctime %s] \u73a9\u5bb6 %d \u5931\u53bb %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer),p, bet, mplayer[p].chips, pool);
-                    printf("[ctime %s] \u73a9\u5bb6 %d \u5931\u53bb %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer),p, bet, mplayer[p].chips, pool);
+                    fprintf(cflog, "[ctime %s] \u73a9\u5bb6 %d \u5931\u53bb %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer), p, bet, mplayer[p].chips, pool);
+                    printf("[ctime %s] \u73a9\u5bb6 %d \u5931\u53bb %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer), p, bet, mplayer[p].chips, pool);
                 }
             }
             else
             {
                 pool = pool + bet;
-                fprintf(cflog, "[ctime %s] \u73a9\u5bb6 %d \u5931\u53bb %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer),p, bet, mplayer[p].chips, pool);
-                printf("[ctime %s] \u73a9\u5bb6 %d \u5931\u53bb %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer),p, bet, mplayer[p].chips, pool);
+                fprintf(cflog, "[ctime %s] \u73a9\u5bb6 %d \u5931\u53bb %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer), p, bet, mplayer[p].chips, pool);
+                printf("[ctime %s] \u73a9\u5bb6 %d \u5931\u53bb %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer), p, bet, mplayer[p].chips, pool);
             }
 
             break;
