@@ -1,25 +1,135 @@
 ****************************************************************
-[ctime  Fri Jun 10 13:36:53 2022
+[ctime  Fri Jun 10 13:53:20 2022
 ] open
-[ctime  Fri Jun 10 13:36:53 2022
- ]玩家人數 : 2
-[ctime  Fri Jun 10 13:36:53 2022
- ]初始籌碼:400 
-[ctime  Fri Jun 10 13:36:53 2022
- ]底注:2 
-[ctime  Fri Jun 10 13:36:53 2022
- ]玩家 0 籌碼 設 為 400 
-[ctime  Fri Jun 10 13:36:53 2022
- ]玩家 1 籌碼 設 為 400 
-[ctime  Fri Jun 10 13:36:53 2022
+[ctime  Fri Jun 10 13:53:20 2022
+ ]玩家人數 : 1
+[ctime  Fri Jun 10 13:53:20 2022
+ ]初始籌碼:100 
+[ctime  Fri Jun 10 13:53:20 2022
+ ]底注:1 
+[ctime  Fri Jun 10 13:53:20 2022
+ ]玩家 0 籌碼 設 為 100 
+[ctime  Fri Jun 10 13:53:20 2022
  ]**************************  
-[ctime  Fri Jun 10 13:36:53 2022
+[ctime  Fri Jun 10 13:53:20 2022
+ ] 柱牌0 為4
+[ctime  Fri Jun 10 13:53:20 2022
+ ] 柱牌1 為9
+[ctime  Fri Jun 10 13:53:20 2022
+ ] 柱牌 2 為 K
+[ctime Fri Jun 10 13:53:20 2022
+] 玩家 0 選擇h
+[ctime Fri Jun 10 13:53:20 2022
+] 玩家 0 下注bet: 95 後剩下籌碼chips:-636334511 
+[ctime Fri Jun 10 13:53:20 2022
+] 玩家 0 失去 5 擁有 95 籌碼
+獎池有 105[ctime  Fri Jun 10 13:53:20 2022
+ ] 柱牌0 為4
+[ctime  Fri Jun 10 13:53:20 2022
+ ] 柱牌1 為 K
+[ctime  Fri Jun 10 13:53:20 2022
+ ] 柱牌 2 為 7
+[ctime Fri Jun 10 13:53:20 2022
+] 玩家 0 選擇n
+[ctime Fri Jun 10 13:53:20 2022
+] 玩家 0 下注bet: 90 後剩下籌碼chips:105 
+[ctime Fri Jun 10 13:53:20 2022
+] 玩家 0 失去 5 擁有 90 籌碼
+獎池有 110[ctime  Fri Jun 10 13:53:20 2022
+ ] 柱牌0 為 J
+[ctime  Fri Jun 10 13:53:20 2022
+ ] 柱牌1 為9
+[ctime  Fri Jun 10 13:53:20 2022
+ ] 柱牌 2 為 6
+[ctime Fri Jun 10 13:53:20 2022
+] 玩家 0 選擇n
+[ctime Fri Jun 10 13:53:20 2022
+] 玩家 0 下注bet: 89 後剩下籌碼chips:110 
+[ctime Fri Jun 10 13:53:20 2022
+] 玩家 0 失去 1 擁有 89 籌碼
+獎池有 111[ctime  Fri Jun 10 13:53:20 2022
+ ] 柱牌0 為 A
+[ctime  Fri Jun 10 13:53:20 2022
+ ] 柱牌1 為8
+[ctime  Fri Jun 10 13:53:20 2022
+ ] 柱牌 2 為 9
+[ctime Fri Jun 10 13:53:20 2022
+] 玩家 0 選擇n
+[ctime Fri Jun 10 13:53:20 2022
+] 玩家 0 下注bet: 83 後剩下籌碼chips:111 
+[ctime Fri Jun 10 13:53:20 2022
+] 玩家 0 失去 6 擁有 83 籌碼
+獎池有 117[ctime  Fri Jun 10 13:53:20 2022
+ ] 柱牌0 為5
+[ctime  Fri Jun 10 13:53:20 2022
+ ] 柱牌1 為 K
+[ctime  Fri Jun 10 13:53:20 2022
+ ] 柱牌 2 為 2
+[ctime Fri Jun 10 13:53:20 2022
+] 玩家 0 選擇n
+[ctime Fri Jun 10 13:53:20 2022
+] 玩家 0 下注bet: 82 後剩下籌碼chips:117 
+[ctime Fri Jun 10 13:53:20 2022
+] 玩家 0 獲得 2 擁有 84 籌碼
+獎池有 116[ctime  Fri Jun 10 13:53:20 2022
  ] 柱牌0 為8
-[ctime  Fri Jun 10 13:36:53 2022
- ] 柱牌1 為10
-[ctime  Fri Jun 10 13:36:53 2022
- ] 柱牌 2 為 5
-[ctime Fri Jun 10 13:36:53 2022
-] 玩家 0 選擇
-[ctime Fri Jun 10 13:36:53 2022
-] 玩家 0 下注bet: 392 後剩下籌碼chips:-2081468847 
+[ctime  Fri Jun 10 13:53:20 2022
+ ] 柱牌1 為 Q
+[ctime  Fri Jun 10 13:53:20 2022
+ ] 柱牌 2 為 K
+[ctime Fri Jun 10 13:53:20 2022
+] 玩家 0 選擇n
+[ctime Fri Jun 10 13:53:20 2022
+] 玩家 0 下注bet: 83 後剩下籌碼chips:116 
+[ctime Fri Jun 10 13:53:20 2022
+] 玩家 0 失去 1 擁有 83 籌碼
+獎池有 117[ctime  Fri Jun 10 13:53:20 2022
+ ] 柱牌0 為 Q
+[ctime  Fri Jun 10 13:53:20 2022
+ ] 柱牌1 為9
+[ctime  Fri Jun 10 13:53:20 2022
+ ] 柱牌 2 為 K
+[ctime Fri Jun 10 13:53:20 2022
+] 玩家 0 選擇1
+[ctime Fri Jun 10 13:53:20 2022
+] 玩家 0 下注bet: 82 後剩下籌碼chips:117 
+[ctime Fri Jun 10 13:53:20 2022
+] 玩家 0 失去 1 擁有 82 籌碼
+獎池有 118[ctime  Fri Jun 10 13:53:20 2022
+ ] 柱牌0 為8
+[ctime  Fri Jun 10 13:53:20 2022
+ ] 柱牌1 為 A
+[ctime  Fri Jun 10 13:53:20 2022
+ ] 柱牌 2 為 4
+[ctime Fri Jun 10 13:53:20 2022
+] 玩家 0 選擇1
+[ctime Fri Jun 10 13:53:20 2022
+] 玩家 0 下注bet: 81 後剩下籌碼chips:118 
+[ctime Fri Jun 10 13:53:20 2022
+] 玩家 0 獲得 2 擁有 83 籌碼
+獎池有 117[ctime  Fri Jun 10 13:53:20 2022
+ ] 柱牌0 為2
+[ctime  Fri Jun 10 13:53:20 2022
+ ] 柱牌1 為3
+[ctime  Fri Jun 10 13:53:20 2022
+ ] 柱牌 2 為 4
+[ctime Fri Jun 10 13:53:20 2022
+] 玩家 0 選擇h
+[ctime Fri Jun 10 13:53:20 2022
+] 玩家 0 下注bet: 82 後剩下籌碼chips:117 
+[ctime Fri Jun 10 13:53:20 2022
+] 玩家 0 失去 1 擁有 82 籌碼
+獎池有 118[ctime  Fri Jun 10 13:53:20 2022
+ ] 柱牌0 為5
+[ctime  Fri Jun 10 13:53:20 2022
+ ] 柱牌1 為 K
+[ctime  Fri Jun 10 13:53:20 2022
+ ] 柱牌 2 為 4
+[ctime Fri Jun 10 13:53:20 2022
+] 玩家 0 選擇1
+[ctime Fri Jun 10 13:53:20 2022
+] 玩家 0 下注bet: 81 後剩下籌碼chips:118 
+[ctime Fri Jun 10 13:53:20 2022
+] 玩家 0 獲得 2 擁有 83 籌碼
+獎池有 117[ctime  Fri Jun 10 13:53:20 2022
+ ] 柱牌0 為2

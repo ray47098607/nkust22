@@ -163,16 +163,16 @@ int main(int argc, char const *argv[])
         printf("[ctime %s ]\u73a9\u5bb6 %d\u8acb\u9078\u64c7", ctime(&timer), p);
         if (card[0] == card[1])
         {
-            printf(" \u4e0a(u)\u4e0b(d)(*2)\u6216 \u649e\u67f1(h)(*5) or endgame(E)");
+            printf(" \u4e0a(u)\u4e0b(d)(*2)\u6216 \u649e\u67f1(h)(*5) ");
         }
         else
         {
-            printf("  \u649e\u67f1(h)(*5) or (n)(*2) OR ENDGAME (E)");
+            printf("  \u649e\u67f1(h)(*5) or (n)(*2)   ");
         }
 
-        printf("\n");
+        printf(" OR ENDGAME (/E)\n");
 
-        scanf("%d", &choice);
+        scanf(" %c", &choice);
 
         unsigned int bet;
 
