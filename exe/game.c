@@ -103,7 +103,7 @@ int main(int argc, char const *argv[])
 
         for (size_t i = 0; i < 3; i++)
         {
-            card[i] = rand() % 14;
+            card[i] = rand() % (13-0+1)+1;
             if (card[i] == 0)
             {
                 Card[i] = 'K';
@@ -187,6 +187,7 @@ int main(int argc, char const *argv[])
             break;
         case 'U':
         case 'u':
+
             if (card[0] == card[1] && card[2] > card[0])
             {
                 mplayer[p].chips = mplayer[p].chips + bet * 2;
@@ -200,7 +201,8 @@ int main(int argc, char const *argv[])
                 fprintf(cflog, "[ctime %s] \u73a9\u5bb6 %d \u5931\u53bb %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer), bet, mplayer[p].chips, pool);
                 printf("[ctime %s] \u73a9\u5bb6 %d \u5931\u53bb %d \u64c1\u6709 %d \u7c4c\u78bc\n\u734e\u6c60\u6709 %d", ctime(&timer), bet, mplayer[p].chips, pool);
             }
-                break
+            break;
+
         case 'D':
         case 'd':
             if (card[0] == card[1] && card[2] < card[0])
